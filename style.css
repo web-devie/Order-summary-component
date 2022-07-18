@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(225, 100%, 94%);
+    font-family: 'Red Hat Display', sans-serif;
+   
+ 
+}
+.bg-pattern
+{
+    background: url(./images/pattern-background-desktop.svg) no-repeat center/cover;
+    height:60vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index:-1;
+    
+}
+
+.container
+{
+    width: 400px;
+    background-color: white;
+    margin: 6em auto;
+    border-radius: 15px;
+}
+
+.hero-img
+{
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+.container h2
+{
+    text-align: center;
+    margin: 1.5em auto 0;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+
+
+.container .description
+{
+    width: 90%;
+    margin: 1em 1em;
+    padding: 0 1em;
+    text-align: center;
+    color: hsl(224, 23%, 55%);
+}
+
+.sub-container
+{
+    padding:0 0.7em;
+}
+
+.subscription
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 1.8em 1.3em 0;
+    background-color: hsl(225, 100%, 98%);
+    padding: 0.8em 1.5em;
+    border-radius: 10px;
+    width: 85%;
+
+}
+
+.subscription .plan-details 
+{
+    width: 50%;
+}
+.plan-details>p:first-child
+{
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+
+.subscription .change-btn
+{
+    align-self: center;
+    font-size: 0.9rem;
+    color:hsl(245, 75%, 52%);
+}
+.subscription .change-btn:active
+{
+    text-decoration: none;
+    color:hsl(245, 75%, 60%);
+}
+
+.container .payment-btn
+{
+    margin: 3em 1.8em 0;
+    width: 85%;
+    padding:0.9em 2em;
+    border: none;
+    border-radius: 10px;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+.container .payment-btn:active
+{
+   background-color: hsl(245, 75%, 60%);
+
+}
+
+
+.cancel-btn
+{
+    display: inline-block;
+    margin: 1.8em 9em; 
+    font-weight: 700;
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+    font-size: 0.9rem;
+}
+
+.cancel-btn:active
+{
+   color: hsl(223, 47%, 23%);
+}
+
+.attribution
+{
+     text-align: center;
+     font-size: 14px;
+     transform: translateY(-60px);
+}
+
+.attribution a
+{
+  color: hsl(245, 75%, 52%) ;
+  display: inline-block;
+
+}
+
+
+@media screen and (max-width:500px)
+{
+    .bg-pattern
+    {
+        background: url(./images/pattern-background-mobile.svg) no-repeat center/cover;
+        height: 40vh;
+        
+    }
+   
+
+
+}
